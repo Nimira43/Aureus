@@ -43,3 +43,34 @@ a {
   font-weight: lighter;
   letter-spacing: 0.25rem;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.coin-card {
+  background-color: var(--grey-dark);
+  padding: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--support);
+  transition: transform 0.2s ease;
+}
+
+.coin-card:hover {
+  transform: translateY(-5px);
+}
+
+.coin-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coin-image {
+  width: 40px;
+  height: 40px;
+}
+
