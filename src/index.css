@@ -139,4 +139,21 @@ a {
   font-size: 1rem;
 }
 
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.top-nav a {
+  color: var(--main);
+  font-weight: 400;
+  transition: color 0.5s ease-in-out;
+}
+
+.top-nav a:hover {
+  color: var(--light);
+}
+
 
