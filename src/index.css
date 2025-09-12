@@ -196,4 +196,18 @@ a {
   color: var(--grey-dark);
 }
 
+.coint-details-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
 
+.coin-details-image {
+  width: 40px;
+  height: 40px;
+}
+
+.coin-details-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--grey-dark);
+}
