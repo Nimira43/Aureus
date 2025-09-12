@@ -88,3 +88,21 @@ a {
 .negative {
   color: var(--negative);
 }
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.top-controls .filter {
+  flex: 1;
+}
+
+.top-controls .controls {
+  flex-shrink: 0;
+}
+
