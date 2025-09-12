@@ -123,5 +123,20 @@ a {
   border-radius: 3px;
   background: var(--grey-dark);
   color: var(--light);
-  border: none'
+  border: none;
 }
+
+.filter {
+  margin-bottom: 2rem;
+}
+
+.filter input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 3px;
+  background: var(--grey-dark);
+  color: var(--light);
+  font-size: 1rem;
+}
+
+
