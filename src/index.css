@@ -54,7 +54,6 @@ a {
   margin-right: 0.5rem;
 }
 
-
 .logo-text {
   font-family: var(--logo-font);
   font-weight: lighter;
@@ -75,7 +74,7 @@ a {
   background-color: var(--grey-dark);
   padding: 1.5rem;
   border-radius: 3px;
-  border: 1px solid var(--support);
+  border: 1px solid var(--main);
   transition: transform 0.2s ease;
 }
 

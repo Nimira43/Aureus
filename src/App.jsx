@@ -39,6 +39,15 @@ const App = () => {
           {error}
         </div>
       }
+      {!loading & !error && (
+        <main className='grid'>
+          {coins.map((coin) => (
+            <div className='coin-card'>
+              
+            </div>
+          ))}
+        </main>
+      )}
     </div>
   )
 }
