@@ -14,8 +14,28 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+a {
+  color: var(--main);
 }
 
 .logo {
