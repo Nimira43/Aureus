@@ -24,8 +24,6 @@ const App = () => {
     fetchCoins()
   }, [])
 
-  
-
   return ( 
     <div>
       <h1 className='logo'>Aureus</h1>
