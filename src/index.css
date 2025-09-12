@@ -211,3 +211,18 @@ a {
   margin-bottom: 20px;
   color: var(--grey-dark);
 }
+
+.coin-details-info h3,
+.coin-details-info h4 {
+  margin: 10px 0;
+  color: var(--grey-dark);
+}
+
+.coin-details-info h3 {
+  font-size: 22px;
+}
+
+.coin-details-info h4 {
+  font-size: 16px;
+}
+
