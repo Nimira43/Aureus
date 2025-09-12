@@ -26,6 +26,9 @@ const App = () => {
 
   return ( 
     <div>
+      <div className='title'>
+
+      </div>
       <h1 className='logo'>Aureus</h1>
       { loading && 
         <p>Loading...</p>

@@ -40,13 +40,16 @@ a {
   color: var(--main);
 }
 
+.title {
+  display: flex;
+}
+
 .logo {
   font-family: var(--logo-font);
   font-weight: lighter;
   font-size: 3rem;
   color: var(--main);
   letter-spacing: 0.25rem;
-
 }
 
 .grid {
