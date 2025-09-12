@@ -238,3 +238,29 @@ a {
   color: var(--grey-dark);
 }
 
+.modal-overlay { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0 ,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--light);
+  padding: 20px;
+  border-radius: 3px;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid var(--support);
+  animation: slideUp 0.3s ease;
+
+}
+
