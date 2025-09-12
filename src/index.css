@@ -11,6 +11,8 @@
   --grey-medium: #999999;
   --grey-light: #ccc;
   --grey-light-extra: #eee;
+  --postive: #12b012;
+  --negative: #d01717;
 }
 
 * {
@@ -74,3 +76,15 @@ a {
   height: 40px;
 }
 
+.symbol {
+  font-size: 0.9rem;
+  color: var(--grey-medium);
+}
+
+.positive {
+  color: var(--postive);
+}
+
+.negative {
+  color: var(--negative);
+}
