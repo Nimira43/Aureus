@@ -21,25 +21,7 @@ const App = () => {
         setLoading(false)
       }
     }
-
     fetchCoins()
-
-    // fetch(apiUrl)
-    //   .then((res) => {
-    //     if (!res.ok) throw new Error('Failed to fetch data.')
-    //     return res.json()
-    //   })
-    //   .then((data) => {
-    //     console.log(data)
-    //     setCoins(data)
-    //     setLoading(false)
-    //   })
-    // .catch((err) => {
-    //   setError(err.message)
-    //   setLoading(false)
-    // })
-
-
   }, [])
 
   return ( 
