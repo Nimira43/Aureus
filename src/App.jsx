@@ -27,10 +27,10 @@ const App = () => {
 
   return ( 
     <div>
-      <div className='title'>
-
-      </div>
-      <h1 className='logo'>Aureus</h1>
+      <div className='logo-title'>
+        <GrMoney className='logo-icon' />
+        <h1 className='logo-text'>Aureus</h1>
+      </div>   
       { loading && 
         <p>Loading...</p>
       }

@@ -40,16 +40,29 @@ a {
   color: var(--main);
 }
 
-.title {
+.logo-title {
   display: flex;
+  align-items: center;
+  gap: 0.5rem
 }
 
-.logo {
+.logo-icon { 
+  display: flex;
+  color: var(--support);
+  font-size: 2rem;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+
+.logo-text {
   font-family: var(--logo-font);
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--main);
   letter-spacing: 0.25rem;
+  line-height: 1;
+  margin: 0;
 }
 
 .grid {
