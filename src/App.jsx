@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { GrMoney } from 'react-icons/gr'
+import CoinCard from './components/CoinCard'
 
 const apiUrl = import.meta.env.VITE_API_URL
 
@@ -42,7 +43,10 @@ const App = () => {
       {!loading & !error && (
         <main className='grid'>
           {coins.map((coin) => (
-            
+            <CoinCard 
+              key={coin.id}
+              coin={coin}
+            />
           ))}
         </main>
       )}

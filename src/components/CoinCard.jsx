@@ -1,9 +1,6 @@
 const CoinCard = ({coin}) => {
   return ( 
-    <div 
-      key={coin.id}
-      className='coin-card'
-    >
+    <div className='coin-card'>
       <div className='coin-header'>
         <img
           src={coin.image}
