@@ -13,6 +13,7 @@
   --grey-light-extra: #eee;
   --postive: #12b012;
   --negative: #d01717;
+  --coin-card-bg: #000;
 }
 
 * {
@@ -43,7 +44,8 @@ a {
 .logo-title {
   display: flex;
   align-items: center;
-  gap: 0.5rem
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .logo-icon { 
@@ -66,12 +68,12 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, min-max(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .coin-card {
-  background-color: var(--grey-dark);
+  background-color: var(--coin-card-bg);
   padding: 1.5rem;
   border-radius: 3px;
   border: 1px solid var(--main);

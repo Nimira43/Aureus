@@ -42,8 +42,17 @@ const App = () => {
       {!loading & !error && (
         <main className='grid'>
           {coins.map((coin) => (
-            <div className='coin-card'>
-              
+            <div 
+              key={coin.id}
+              className='coin-card'
+            >
+              <div className='coin-header'>
+                <img
+                  src={coin.image}
+                  alt={coin.name}
+                  className='coin-image'
+                />
+              </div>
             </div>
           ))}
         </main>
