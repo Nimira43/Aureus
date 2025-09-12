@@ -24,9 +24,19 @@ const App = () => {
     fetchCoins()
   }, [])
 
+  
+
   return ( 
     <div>
       <h1 className='logo'>Aureus</h1>
+      { loading && 
+        <p>Loading...</p>
+      }
+      { error && 
+        <div className='error'>
+          {error}
+        </div>
+      }
     </div>
   )
 }
