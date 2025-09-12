@@ -9,7 +9,17 @@ const App = () => {
 
   useEffect(() => {
     const fetchCoins = async () => {
-
+      try {
+        const res = await fetch(apiUrl)
+        if (!res.ok) throw new Error('Fail to fetch data.')
+        const data = await res.json()
+        console.log(data)
+        setCoins(data)
+      } catch (err) {
+        setError(err.message)
+      } finally {
+        setLoading(false)
+      }
     }
 
     fetchCoins()
