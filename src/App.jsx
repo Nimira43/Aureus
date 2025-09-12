@@ -7,6 +7,17 @@ const App = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
+  useEffect(() => {
+    fetch(apiUrl)
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to fetch data.')
+        return res.json()
+      })
+    .then((data) => {
+      console.log(data)
+      setCoins(data)
+    })
+  }, [])
 
   return ( 
     <div>
