@@ -52,6 +52,10 @@ const App = () => {
                   alt={coin.name}
                   className='coin-image'
                 />
+                <div>
+                  <h2>{coin.name}</h2>
+                  <p className='symbol'>{coin.symbol.toUpperCase()}</p>
+                </div>
               </div>
             </div>
           ))}
