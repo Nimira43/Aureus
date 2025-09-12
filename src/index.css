@@ -106,3 +106,22 @@ a {
   flex-shrink: 0;
 }
 
+.controls {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.75rem;
+}
+
+.controls label {
+  font-weight: 400;
+}
+
+.controls select {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: var(--grey-dark);
+  color: var(--light);
+  border: none'
+}
