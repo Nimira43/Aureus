@@ -1,4 +1,4 @@
-const CoinCard = () => {
+const CoinCard = ({coin}) => {
   return ( 
     <div>
       Coin Card
