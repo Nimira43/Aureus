@@ -134,6 +134,7 @@ a {
   width: 100%;
   padding: 0.75rem;
   border-radius: 3px;
+  border: none;
   background: var(--grey-dark);
   color: var(--light);
   font-size: 1rem;
@@ -181,6 +182,7 @@ a {
   padding: 20px;
   color: var(--grey-dark);
   background-color: var(--grey-light-extra);
+  border-radius: 3px;
   border: 1px solid var(--support);
 }
 
@@ -202,8 +204,8 @@ a {
 }
 
 .coin-details-image {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  margin-bottom: 20px
 }
 
 .coin-details-description {
