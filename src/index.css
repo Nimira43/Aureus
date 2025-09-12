@@ -226,3 +226,15 @@ a {
   font-size: 16px;
 }
 
+.coin-details-links {
+  margin-top: 20px;
+}
+
+.coin-details-links a {
+  color: var(--support);
+}
+
+.coin-details-links a:hover {
+  color: var(--grey-dark);
+}
+
