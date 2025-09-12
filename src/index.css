@@ -156,4 +156,22 @@ a {
   color: var(--light);
 }
 
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--grey-dark);
+  padding: 2rem;
+  border-radius: 3px;
+  border: 1px solid var(--support);
+}
+
+.about h1 { 
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 
