@@ -42,6 +42,9 @@ const App = () => {
           <select 
             value={limit} 
             id='limit'
+            onChange={
+              (e) => setLimit(Number(e.target.value))
+            }
           >
 
           </select>
