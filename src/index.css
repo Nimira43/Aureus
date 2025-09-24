@@ -147,15 +147,22 @@ a {
 }
 
 .controls label {
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--main);
+  text-transform: uppercase;
 }
 
 .controls select {
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  background: var(--grey-dark);
-  color: var(--light);
-  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--support);
+  color: var(--main);
+  font-weight: 500;
+  border: 2px solid var(--main);
+  border-radius: 10px;
+  padding: 0.5rem 1rem; 
+  outline: none;
 }
 
 .filter {

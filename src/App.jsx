@@ -46,7 +46,7 @@ const App = () => {
           <label
             htmlFor='limit'
           >
-            Show:
+            Show
           </label>
           <select 
             value={limit} 
