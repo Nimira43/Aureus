@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const fetchCoins = async () => {
       try {
-        const res = await fetch(`${API_URL}&order=market_cap_desc&per_page=10&page=1&sparkline=false`)
+        const res = await fetch(`${API_URL}&order=market_cap_desc&per_page=${limit}&page=1&sparkline=false`)
         if (!res.ok) throw new Error('Fail to fetch data.')
         const data = await res.json()
         console.log(data)
@@ -25,7 +25,7 @@ const App = () => {
       }
     }
     fetchCoins()
-  }, [])
+  }, [limit])
 
   return ( 
     <div >
@@ -34,14 +34,6 @@ const App = () => {
           <GrMoney className='logo-icon' />
           <h1 className='logo-text'>Aureus</h1>
         </div> 
-        { loading && 
-          <p>Loading...</p>
-        }
-        { error && 
-          <div className='error'>
-            {error}
-          </div>
-        }
         <div className='controls'>
           <label
             htmlFor='limit'
@@ -63,6 +55,14 @@ const App = () => {
           </select>
         </div>
       </div>
+      { loading && 
+        <p>Loading...</p>
+      }
+      { error && 
+        <div className='error'>
+          {error}
+        </div>
+      }
       {!loading && !error && (
         <main className='grid'>
           {coins.map((coin) => (
