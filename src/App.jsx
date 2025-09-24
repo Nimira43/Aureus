@@ -8,6 +8,7 @@ const App = () => {
   const [coins, setCoins ] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+  const [limit, setLimit] = useState(10)
 
   useEffect(() => {
     const fetchCoins = async () => {
