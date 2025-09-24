@@ -28,40 +28,41 @@ const App = () => {
   }, [])
 
   return ( 
-    <div>
-      <div className='logo-title'>
-        <GrMoney className='logo-icon' />
-        <h1 className='logo-text'>Aureus</h1>
-      </div> 
-      { loading && 
-        <p>Loading...</p>
-      }
-      { error && 
-        <div className='error'>
-          {error}
+    <div >
+      <div className='top-bar'>
+        <div className='logo-title'>
+          <GrMoney className='logo-icon' />
+          <h1 className='logo-text'>Aureus</h1>
+        </div> 
+        { loading && 
+          <p>Loading...</p>
+        }
+        { error && 
+          <div className='error'>
+            {error}
+          </div>
+        }
+        <div className='controls'>
+          <label
+            htmlFor='limit'
+          >
+            Show:
+          </label>
+          <select 
+            value={limit} 
+            id='limit'
+            onChange={
+              (e) => setLimit(Number(e.target.value))
+            }
+          >
+            <option value='5'>5</option>
+            <option value='10'>10</option>
+            <option value='20'>20</option>
+            <option value='50'>50</option>
+            <option value='100'>100</option>
+          </select>
         </div>
-      }
-      <div className='controls'>
-        <label
-          htmlFor='limit'
-        >
-          Show:
-        </label>
-        <select 
-          value={limit} 
-          id='limit'
-          onChange={
-            (e) => setLimit(Number(e.target.value))
-          }
-        >
-          <option value='5'>5</option>
-          <option value='10'>10</option>
-          <option value='20'>20</option>
-          <option value='50'>50</option>
-          <option value='100'>100</option>
-        </select>
       </div>
-        
       {!loading && !error && (
         <main className='grid'>
           {coins.map((coin) => (
