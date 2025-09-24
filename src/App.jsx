@@ -32,6 +32,20 @@ const App = () => {
       <div className='logo-title'>
         <GrMoney className='logo-icon' />
         <h1 className='logo-text'>Aureus</h1>
+
+        <div className='controls'>
+          <label
+            htmlFor='limit'
+          >
+            Show:
+          </label>
+          <select 
+            value={limit} 
+            id='limit'
+          >
+
+          </select>
+        </div>
       </div>   
       { loading && 
         <p>Loading...</p>
