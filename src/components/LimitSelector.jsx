@@ -1,4 +1,4 @@
-const LimitSelector = () => {
+const LimitSelector = ({limit, onLimitChange}) => {
   return ( 
     <div>LimitSelector</div>
    )
