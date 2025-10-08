@@ -16,7 +16,6 @@ const App = () => {
         const res = await fetch(`${API_URL}&order=market_cap_desc&per_page=${limit}&page=1&sparkline=false`)
         if (!res.ok) throw new Error('Fail to fetch data.')
         const data = await res.json()
-        console.log(data)
         setCoins(data)
       } catch (err) {
         setError(err.message)
