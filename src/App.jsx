@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { GrMoney } from 'react-icons/gr'
 import CoinCard from './components/CoinCard'
+import LimitSelector from './components/LimitSelector'
 
 const API_URL = import.meta.env.VITE_API_URL
 
@@ -33,7 +34,10 @@ const App = () => {
           <GrMoney className='logo-icon' />
           <h1 className='logo-text'>Aureus</h1>
         </div> 
-        
+        <LimitSelector 
+          limit={limit}
+          onLimitChange={setLimit}
+        />
       </div>
       { loading && 
         <p>Loading...</p>

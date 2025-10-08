@@ -20,7 +20,7 @@ const LimitSelector = ({limit, onLimitChange}) => {
         <option value='100'>100</option>
       </select>
     </div>
-   )
+  )
 }
  
 export default LimitSelector
