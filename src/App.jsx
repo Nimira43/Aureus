@@ -40,10 +40,13 @@ const App = () => {
         </div>
       }
       <div className='top-controls'>
-          <LimitSelector 
-            limit={limit}
-            onLimitChange={setLimit }
-          />
+        <FilterInput 
+        
+        />
+        <LimitSelector 
+          limit={limit}
+          onLimitChange={setLimit }
+        />
       </div>
         
       

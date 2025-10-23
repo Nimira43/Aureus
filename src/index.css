@@ -4,7 +4,8 @@
   --main-font: 'Poppins', sans-serif;
   --logo-font: 'Ceviche One', system-ui;  
   --main: #ffd700;
-  --support: #c61717;
+  --main-light: #fefeba;
+  --black: #000;
   --dark: #111;
   --light: #fffcfa;
   --grey-dark: #333;
@@ -13,7 +14,7 @@
   --grey-light-extra: #eee;
   --postive: #12b012;
   --negative: #d01717;
-  --coin-card-bg: #000;
+  
 }
 
 * {
@@ -39,7 +40,7 @@ a {
 .logo-text {
   font-family: var(--logo-font);
   font-weight: lighter;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--main);
   margin-bottom: 2rem;
 }
@@ -55,7 +56,7 @@ a {
 }
 
 .coin-card {
-  background-color: var(--coin-card-bg);
+  background-color: var(--black);
   padding: 1.5rem;
   border-radius: 3px;
   border: 1px solid var(--main);
@@ -126,12 +127,14 @@ a {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: var(--support);
+  background: var(--black);
   color: var(--main);
+  font-size: 1rem;
   font-weight: 500;
+  text-align: center;
   border: 1px solid var(--main);
   border-radius: 3px;
-  padding: 0.5rem 1rem; 
+  padding: 0.75rem; 
   outline: none;
 }
 
@@ -139,7 +142,6 @@ a {
   border: none;
   font-weight: 500;
 }
-
 
 .filter {
   margin-bottom: 2rem;
@@ -149,10 +151,15 @@ a {
   width: 100%;
   padding: 0.75rem;
   border-radius: 3px;
-  border: none;
-  background: var(--grey-dark);
-  color: var(--light);
+  border: 1px solid var(--main);
+  background: var(--black);
+  color: var(--main);
   font-size: 1rem;
+  outline: none;
+}
+
+.filter input::placeholder {
+  color: var(--main-light)
 }
 
 .top-nav {
