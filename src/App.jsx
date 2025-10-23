@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { GrMoney } from 'react-icons/gr'
 import CoinCard from './components/CoinCard'
 import LimitSelector from './components/LimitSelector'
 import FilterInput from './components/FilterInput'
@@ -33,7 +32,7 @@ const App = () => {
     <div >
       <div className='top-bar'>
         <div className='logo-title'>
-          <GrMoney className='logo-icon' />
+          
           <h1 className='logo-text'>Aureus</h1>
         </div> 
         <div className='top-controls'>

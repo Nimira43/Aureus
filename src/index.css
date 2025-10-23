@@ -56,13 +56,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.logo-icon { 
-  display: flex;
-  color: var(--support);
-  font-size: 2rem;
-  align-items: center;
-  margin-right: 0.5rem;
-}
+
 
 .logo-text {
   font-family: var(--logo-font);
