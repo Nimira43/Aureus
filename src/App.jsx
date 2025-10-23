@@ -68,12 +68,15 @@ const App = () => {
         
       {!loading && !error && (
         <main className='grid'>
-          {filteredCoins.map((coin) => (
+          {filteredCoins.length > 0 ?
+            filteredCoins.map((coin) => (
             <CoinCard 
               key={coin.id}
               coin={coin}
             />
-          ))}
+          )) : (
+            <p className='main-colour'>No matching coins found.</p>
+          )}
         </main>
       )}
     </div>
