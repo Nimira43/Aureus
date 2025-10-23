@@ -10,6 +10,7 @@ const App = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [limit, setLimit] = useState(10)
+  const [filter, setFilter] = useState('')
 
   useEffect(() => {
     const fetchCoins = async () => {
@@ -36,7 +37,7 @@ const App = () => {
         </div> 
         <LimitSelector 
           limit={limit}
-          onLimitChange={setLimit}
+          onLimitChange={setLimit }
         />
       </div>
       { loading && 
