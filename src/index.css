@@ -59,7 +59,7 @@ a {
 .logo-icon { 
   display: flex;
   color: var(--support);
-  font-size: 3rem;
+  font-size: 2rem;
   align-items: center;
   margin-right: 0.5rem;
 }
@@ -67,7 +67,7 @@ a {
 .logo-text {
   font-family: var(--logo-font);
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--main);
   letter-spacing: 0.25rem;
   line-height: 1;
@@ -243,7 +243,7 @@ a {
   color: var(--grey-dark);
 }
 
-.coint-details-title {
+.coins-details-title {
   font-size: 36px;
   margin-bottom: 10px;
 }

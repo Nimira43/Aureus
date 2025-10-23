@@ -36,10 +36,13 @@ const App = () => {
           <GrMoney className='logo-icon' />
           <h1 className='logo-text'>Aureus</h1>
         </div> 
-        <LimitSelector 
+        <div className='top-controls'>
+          <LimitSelector 
           limit={limit}
           onLimitChange={setLimit }
-        />
+          />
+        </div>
+        
       </div>
       { loading && 
         <p>Loading...</p>
