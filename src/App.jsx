@@ -41,7 +41,8 @@ const App = () => {
       }
       <div className='top-controls'>
         <FilterInput 
-        
+          filter={filter}
+          onFilterChange={setFilter}
         />
         <LimitSelector 
           limit={limit}
@@ -49,7 +50,6 @@ const App = () => {
         />
       </div>
         
-      
       {!loading && !error && (
         <main className='grid'>
           {coins.map((coin) => (
