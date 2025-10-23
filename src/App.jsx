@@ -68,7 +68,7 @@ const App = () => {
         
       {!loading && !error && (
         <main className='grid'>
-          {coins.map((coin) => (
+          {filteredCoins.map((coin) => (
             <CoinCard 
               key={coin.id}
               coin={coin}
