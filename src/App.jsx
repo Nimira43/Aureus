@@ -29,20 +29,8 @@ const App = () => {
   }, [limit])
 
   return ( 
-    <div >
-      <div className='top-bar'>
-        <div className='logo-title'>
-          
-          <h1 className='logo-text'>Aureus</h1>
-        </div> 
-        <div className='top-controls'>
-          <LimitSelector 
-          limit={limit}
-          onLimitChange={setLimit }
-          />
-        </div>
-        
-      </div>
+    <div>
+      <h1 className='logo-text'>Aureus</h1>
       { loading && 
         <p>Loading...</p>
       }
@@ -51,6 +39,14 @@ const App = () => {
           {error}
         </div>
       }
+      <div className='top-controls'>
+          <LimitSelector 
+            limit={limit}
+            onLimitChange={setLimit }
+          />
+      </div>
+        
+      
       {!loading && !error && (
         <main className='grid'>
           {coins.map((coin) => (
