@@ -8,13 +8,12 @@
   --black: #000;
   --dark: #111;
   --light: #fffcfa;
-  --grey-dark: #333;
-  --grey-medium: #999999;
-  --grey-light: #ccc;
-  --grey-light-extra: #eee;
+  --grey-1: #333;
+  --grey-2: #999;
+  --grey-3: #ccc;
+  --grey-4: #eee;
   --postive: #12b012;
   --negative: #d01717;
-  
 }
 
 * {
@@ -81,7 +80,7 @@ a {
 
 .symbol {
   font-size: 0.9rem;
-  color: var(--grey-medium);
+  color: var(--grey-2);
 }
 
 .positive {
@@ -182,10 +181,10 @@ a {
 .about {
   max-width: 600px;
   margin: 0 auto;
-  background-color: var(--grey-dark);
+  background-color: var(--grey-1);
   padding: 2rem;
   border-radius: 3px;
-  border: 1px solid var(--support);
+  border: 1px solid var(--grey-3);
 }
 
 .about h1 { 
@@ -202,8 +201,8 @@ a {
   margin: 40px auto;
   text-align: center;
   padding: 20px;
-  color: var(--grey-dark);
-  background-color: var(--grey-light-extra);
+  color: var(--grey-1);
+  background-color: var(--grey-4);
   border-radius: 3px;
   border: 1px solid var(--support);
 }
@@ -217,7 +216,7 @@ a {
 }
 
 .coins-details-containera:hover {
-  color: var(--grey-dark);
+  color: var(--grey-1);
 }
 
 .coins-details-title {
@@ -233,13 +232,13 @@ a {
 .coin-details-description {
   font-size: 16px;
   margin-bottom: 20px;
-  color: var(--grey-dark);
+  color: var(--grey-1);
 }
 
 .coin-details-info h3,
 .coin-details-info h4 {
   margin: 10px 0;
-  color: var(--grey-dark);
+  color: var(--grey-1);
 }
 
 .coin-details-info h3 {
@@ -259,7 +258,7 @@ a {
 }
 
 .coin-details-links a:hover {
-  color: var(--grey-dark);
+  color: var(--grey-1);
 }
 
 .modal-overlay { 
