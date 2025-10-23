@@ -28,6 +28,10 @@ const App = () => {
     fetchCoins()
   }, [limit])
 
+  const filteredCoins = coins.filter((coin) => {
+    
+  })
+
   return ( 
     <div>
       <h1 className='logo-text'>Aureus</h1>
