@@ -29,7 +29,19 @@ const App = () => {
   }, [limit])
 
   const filteredCoins = coins.filter((coin) => {
-    
+    return (
+      coin.name
+        .toLowerCase()
+        .includes(filter
+          .toLowerCase()
+        ) || 
+      coin.symbol
+        .toLowerCase()
+        .includes(
+          filter.
+          toLowerCase()
+        )
+    )
   })
 
   return ( 
