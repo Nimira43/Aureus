@@ -22,10 +22,10 @@ const SortSelector = ({ sortBy, onSortChange }) => {
           Price (Low to High)
         </option>
         <option value='change_desc'>
-          24 Hour Chane (High to Low)
+          24 Hour Change (High to Low)
         </option>
         <option value='change_asc'>
-          24 Hour Chane (Low to High)
+          24 Hour Change (Low to High)
         </option>
       </select>
 

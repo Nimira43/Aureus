@@ -66,6 +66,10 @@ const App = () => {
           limit={limit}
           onLimitChange={setLimit }
         />
+        <SortSelector 
+          sortBy={sortBy}
+          onSortChange={setSortBy}
+        />
       </div>
         
       {!loading && !error && (
