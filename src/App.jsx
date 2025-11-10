@@ -11,6 +11,7 @@ const App = () => {
   const [error, setError] = useState(null)
   const [limit, setLimit] = useState(10)
   const [filter, setFilter] = useState('')
+  const [sortBy, setSortBy] = useState('market_cap_desc')
 
   useEffect(() => {
     const fetchCoins = async () => {
