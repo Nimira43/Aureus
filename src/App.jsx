@@ -47,7 +47,10 @@ const App = () => {
   })
   .slice()
   .sort((a, b) => {
-    
+    switch (sortBy) {
+      case 'market_cap_desc':
+        return b.market_cap - a.market_cap
+    }
   })
 
   return ( 
