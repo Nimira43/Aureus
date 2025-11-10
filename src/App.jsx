@@ -58,6 +58,8 @@ const App = () => {
         return a.current_price - b.current_price
       case 'change_desc':
         return b.price_change_percentage_24h - a.price_change_percentage_24h
+      case 'change_asc':
+        return a.price_change_percentage_24h - b.price_change_percentage_24h
     }
   })
 
