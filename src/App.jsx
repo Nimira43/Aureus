@@ -50,6 +50,8 @@ const App = () => {
     switch (sortBy) {
       case 'market_cap_desc':
         return b.market_cap - a.market_cap
+      case 'market_cap_asc':
+        return a.market_cap - b.market_cap
     }
   })
 
