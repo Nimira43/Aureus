@@ -52,6 +52,8 @@ const App = () => {
         return b.market_cap - a.market_cap
       case 'market_cap_asc':
         return a.market_cap - b.market_cap
+      case 'price_desc':
+        return b.current_price - a.current_price
     }
   })
 
